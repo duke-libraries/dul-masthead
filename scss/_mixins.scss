@@ -1,0 +1,11 @@
+@mixin icon($iconurl) {
+    background-image: url($iconurl);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+@mixin megamenu-visible() {
+    -webkit-transition-delay: 150;
+    visibility: visible !important;
+    z-index: 999999999;
+}

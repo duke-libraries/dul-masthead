@@ -1,0 +1,104 @@
+.dul-masthead-megamenu_button a {
+    display: none;
+}
+
+.dul-masthead-no-touch {
+        ul li.dul-masthead-mega_toplevel:hover {
+        background-color: rgb(161, 183, 13);
+
+        div.dul-masthead-dropdown_fullwidth {
+            @include megamenu-visible();
+        }
+    }
+}
+
+.dul-masthead-megamenu_container {
+
+    .dul-masthead-moreLink {
+        padding-left: 10px !important;
+    }
+
+    ul .dul-masthead-mega_toplevel {
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            padding-bottom: 30px;
+        }
+    }
+
+    div.dul-masthead-dropdown_fullwidth {
+        visibility: hidden;
+        -webkit-transition: 0 visibility;
+        visibility: hidden;
+        position: absolute;
+        top: auto;
+        right: 0;
+        // background-color: rgb(238, 238, 238);
+        background-color: #FFF;
+        // width: 960px;
+        margin: -18px auto;
+        margin-top:4px;
+        border: 1px solid black;
+
+        color: #000;
+        padding: 15px 15px 15px 15px;
+
+        a {
+            color: #0062A0;
+        }
+
+        a:hover {
+            color: #728302;
+        }
+
+        ul {
+            display: block;
+            padding-left:0;
+            li {
+                display: block !important;
+                font-size: 13px;
+                padding-top: 10px;
+            }
+
+        }
+    }
+}
+
+#dul-masthead-account-hours, #dul-masthead-website-search-link {
+    display: none;
+}
+
+.dul-masthead-megamenu_container {
+    ul {
+        padding: 0 20px 0 0;
+        text-align: left;
+        display: inline;
+        li {
+          display: inline-block !important;
+          padding: 4px 12px 4px 12px;
+          margin: 0;
+          font-size: 14.7px;
+        }
+    }
+}
+
+
+input[type=text] {
+    width: 125px;
+    height: 24px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: bottom;
+    transition:width 1s;
+    -webkit-transition:width 1s; /* Safari */
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+
+input[type=text]:focus {
+    border: 1px solid #1D9CC7;
+    width: 250px;        
+}   

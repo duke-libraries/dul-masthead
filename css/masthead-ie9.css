@@ -1,0 +1,240 @@
+.dul-masthead-bar {
+  width: 100%;
+  text-align: center; }
+
+#dul-masthead-dul-megamenu {
+  /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+  /* End Reset */
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+  background-color: #053482;
+  width: 100%;
+  max-width: 990px;
+  height: 105px;
+  margin: 0 auto;
+  margin-bottom: -2px;
+  text-align: left; }
+  #dul-masthead-dul-megamenu html, #dul-masthead-dul-megamenu body, #dul-masthead-dul-megamenu div, #dul-masthead-dul-megamenu span, #dul-masthead-dul-megamenu applet, #dul-masthead-dul-megamenu object, #dul-masthead-dul-megamenu iframe, #dul-masthead-dul-megamenu h1, #dul-masthead-dul-megamenu h2, #dul-masthead-dul-megamenu h3, #dul-masthead-dul-megamenu h4, #dul-masthead-dul-megamenu h5, #dul-masthead-dul-megamenu h6, #dul-masthead-dul-megamenu p, #dul-masthead-dul-megamenu blockquote, #dul-masthead-dul-megamenu pre, #dul-masthead-dul-megamenu a, #dul-masthead-dul-megamenu abbr, #dul-masthead-dul-megamenu acronym, #dul-masthead-dul-megamenu address, #dul-masthead-dul-megamenu big, #dul-masthead-dul-megamenu cite, #dul-masthead-dul-megamenu code, #dul-masthead-dul-megamenu del, #dul-masthead-dul-megamenu dfn, #dul-masthead-dul-megamenu em, #dul-masthead-dul-megamenu img, #dul-masthead-dul-megamenu ins, #dul-masthead-dul-megamenu kbd, #dul-masthead-dul-megamenu q, #dul-masthead-dul-megamenu s, #dul-masthead-dul-megamenu samp, #dul-masthead-dul-megamenu small, #dul-masthead-dul-megamenu strike, #dul-masthead-dul-megamenu strong, #dul-masthead-dul-megamenu sub, #dul-masthead-dul-megamenu sup, #dul-masthead-dul-megamenu tt, #dul-masthead-dul-megamenu var, #dul-masthead-dul-megamenu b, #dul-masthead-dul-megamenu u, #dul-masthead-dul-megamenu i, #dul-masthead-dul-megamenu center, #dul-masthead-dul-megamenu dl, #dul-masthead-dul-megamenu dt, #dul-masthead-dul-megamenu dd, #dul-masthead-dul-megamenu ol, #dul-masthead-dul-megamenu ul, #dul-masthead-dul-megamenu li, #dul-masthead-dul-megamenu fieldset, #dul-masthead-dul-megamenu form, #dul-masthead-dul-megamenu label, #dul-masthead-dul-megamenu legend, #dul-masthead-dul-megamenu table, #dul-masthead-dul-megamenu caption, #dul-masthead-dul-megamenu tbody, #dul-masthead-dul-megamenu tfoot, #dul-masthead-dul-megamenu thead, #dul-masthead-dul-megamenu tr, #dul-masthead-dul-megamenu th, #dul-masthead-dul-megamenu td, #dul-masthead-dul-megamenu article, #dul-masthead-dul-megamenu aside, #dul-masthead-dul-megamenu canvas, #dul-masthead-dul-megamenu details, #dul-masthead-dul-megamenu embed, #dul-masthead-dul-megamenu figure, #dul-masthead-dul-megamenu figcaption, #dul-masthead-dul-megamenu footer, #dul-masthead-dul-megamenu header, #dul-masthead-dul-megamenu hgroup, #dul-masthead-dul-megamenu menu, #dul-masthead-dul-megamenu nav, #dul-masthead-dul-megamenu output, #dul-masthead-dul-megamenu ruby, #dul-masthead-dul-megamenu section, #dul-masthead-dul-megamenu summary, #dul-masthead-dul-megamenu time, #dul-masthead-dul-megamenu mark, #dul-masthead-dul-megamenu audio, #dul-masthead-dul-megamenu video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0; }
+  #dul-masthead-dul-megamenu article, #dul-masthead-dul-megamenu aside, #dul-masthead-dul-megamenu details, #dul-masthead-dul-megamenu figcaption, #dul-masthead-dul-megamenu figure, #dul-masthead-dul-megamenu footer, #dul-masthead-dul-megamenu header, #dul-masthead-dul-megamenu hgroup, #dul-masthead-dul-megamenu menu, #dul-masthead-dul-megamenu nav, #dul-masthead-dul-megamenu section {
+    display: block; }
+  #dul-masthead-dul-megamenu body {
+    line-height: 1; }
+  #dul-masthead-dul-megamenu ol, #dul-masthead-dul-megamenu ul {
+    list-style: none; }
+  #dul-masthead-dul-megamenu blockquote, #dul-masthead-dul-megamenu q {
+    quotes: none; }
+  #dul-masthead-dul-megamenu blockquote:before, #dul-masthead-dul-megamenu blockquote:after, #dul-masthead-dul-megamenu q:before, #dul-masthead-dul-megamenu q:after {
+    content: none; }
+  #dul-masthead-dul-megamenu table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  #dul-masthead-dul-megamenu input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 6px;
+    padding-top: 4px;
+    box-sizing: content-box; }
+  #dul-masthead-dul-megamenu .img-polaroid {
+    padding: 4px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  #dul-masthead-dul-megamenu .dul-masthead-nav-trigger {
+    display: none; }
+  #dul-masthead-dul-megamenu .dul-masthead-mobile-menu {
+    display: none; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu_button {
+    display: none; }
+  #dul-masthead-dul-megamenu button.dul-masthead-btn {
+    width: 45px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+    background: #a1b70d url("//library.duke.edu/masthead/img/search.png") center no-repeat;
+    background-size: 45%;
+    position: relative;
+    right: 5px;
+    bottom: 0;
+    vertical-align: bottom;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px; }
+  #dul-masthead-dul-megamenu input.dul-masthead-mastSearchBox {
+    outline-offset: 0;
+    border: 0 !important; }
+  #dul-masthead-dul-megamenu .dul-masthead-zone-thebreadcrumb-wrapper {
+    display: none !important; }
+  #dul-masthead-dul-megamenu span.dul-masthead-smaller {
+    font-size: 11px; }
+  #dul-masthead-dul-megamenu .dul-masthead-normal {
+    font-weight: normal;
+    margin-left: 0;
+    padding-left: 0; }
+  #dul-masthead-dul-megamenu .dul-masthead-muted {
+    color: #999999; }
+  #dul-masthead-dul-megamenu .dul-masthead-btn-group {
+    display: inline; }
+  #dul-masthead-dul-megamenu #dul-masthead-logo {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px; }
+  #dul-masthead-dul-megamenu .dul-masthead-region-scoped-search {
+    float: right;
+    display: block;
+    padding: 15px 15px 0 15px; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-dropdown_filler, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_1, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_2, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_3, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_4, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_5, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_6, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_7, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_8, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_9, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_10, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_11, #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_12 {
+    float: left;
+    display: inline;
+    position: relative; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-menu-items {
+    max-width: 750px;
+    float: right; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu div.dul-masthead-col_2 {
+    width: 16.66666666%;
+    padding: 0;
+    margin: 0; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_3 {
+    width: 25%; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_4 {
+    width: 33.333333333333333333333334%; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-col_12 {
+    width: 100%;
+    margin-top: 20px; }
+  #dul-masthead-dul-megamenu .dul-masthead-region-myaccount {
+    border-bottom-color: #333333;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: #333333;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: #333333;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: #333333;
+    border-top-style: none;
+    border-top-width: 0px;
+    clear: none;
+    color: #333333;
+    display: block;
+    float: right;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 24px;
+    line-height: 19.6000003814697px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    outline-color: #333333;
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-top: 0px;
+    position: relative;
+    text-align: left;
+    vertical-align: baseline; }
+    #dul-masthead-dul-megamenu .dul-masthead-region-myaccount a {
+      color: #94AFED;
+      text-decoration: none;
+      margin-left: 15px; }
+    #dul-masthead-dul-megamenu .dul-masthead-region-myaccount #dul-masthead-myAccounts {
+      background-image: url("//library.duke.edu/masthead/img/user-94AFED-17x16.png");
+      background-repeat: no-repeat;
+      padding-left: 25px; }
+    #dul-masthead-dul-megamenu .dul-masthead-region-myaccount #dul-masthead-ask-librarian-link {
+      background-image: url("//library.duke.edu/masthead/img/comment-94AFED-18x15.png");
+      background-repeat: no-repeat;
+      padding-left: 25px; }
+    #dul-masthead-dul-megamenu .dul-masthead-region-myaccount #dul-masthead-account-hours {
+      background-image: url("//library.duke.edu/masthead/img/clock-94AFED-16x16.png");
+      background-repeat: no-repeat;
+      padding-left: 25px; }
+    #dul-masthead-dul-megamenu .dul-masthead-region-myaccount #dul-masthead-website-search-link {
+      background-image: url("//library.duke.edu/masthead/img/search-94AFED-16x16.png");
+      background-repeat: no-repeat;
+      padding-left: 25px; }
+    #dul-masthead-dul-megamenu .dul-masthead-region-myaccount a:hover {
+      color: #aac1f7; }
+  #dul-masthead-dul-megamenu #dul-masthead-region-megamenu {
+    float: right;
+    margin: 15px 0 0 0;
+    padding: 0;
+    clear: right; }
+  #dul-masthead-dul-megamenu div.dul-masthead-featureCaption {
+    text-align: left;
+    font-size: 10px;
+    padding-top: 3px; }
+  #dul-masthead-dul-megamenu div.dul-masthead-auxHelp {
+    margin-left: 0;
+    padding-left: 0;
+    color: #777777;
+    font-size: 13px;
+    float: right !important; }
+  #dul-masthead-dul-megamenu div.dul-masthead-moreLink {
+    padding: 0;
+    margin: 0;
+    font-size: 13px; }
+  #dul-masthead-dul-megamenu #dul-masthead-nav-trigger, #dul-masthead-dul-megamenu #dul-masthead-nav-collapse {
+    position: fixed;
+    clip: rect(0, 0, 0, 0); }
+  #dul-masthead-dul-megamenu .dul-masthead-mastSearchBox {
+    font-size: 12px; }
+  #dul-masthead-dul-megamenu body {
+    margin: 0; }
+
+#dul-masthead-dul-megamenu .dul-masthead-zone-thebreadcrumb-wrapper {
+  display: none !important; }
+#dul-masthead-dul-megamenu .dul-masthead-btn-group {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-region-scoped-search {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-dropdown_fullwidth {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-nav-trigger, #dul-masthead-dul-megamenu #dul-masthead-nav-collapse, #dul-masthead-dul-megamenu label, #dul-masthead-dul-megamenu .dul-masthead-dropdown-toggle {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-nav-trigger {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-megamenu_button {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-ie-container {
+  display: none; }
+#dul-masthead-dul-megamenu .dul-masthead-megamenu_container ul {
+  padding: 0 20px 0 0;
+  text-align: left;
+  display: inline; }
+  #dul-masthead-dul-megamenu .dul-masthead-megamenu_container ul li {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+    padding: 4px 12px 4px 12px;
+    margin: 0;
+    font-size: 14.7px; }
+#dul-masthead-dul-megamenu ul .dul-masthead-mega_toplevel a {
+  text-decoration: none;
+  color: #FFF;
+  padding-bottom: 30px; }

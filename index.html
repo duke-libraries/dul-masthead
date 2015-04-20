@@ -1,0 +1,540 @@
+
+
+
+
+
+
+
+
+
+<!-- Get shib variables for use later in the application -->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Control browser caching to force validation with the server -->
+
+
+
+
+
+
+
+
+
+
+
+            <title>Duke Libraries - Find Databases</title>
+        
+                <link rel="SHORTCUT ICON" href="images/duke-favicon.ico" />
+            
+
+
+
+<!-- stylesheets -->
+<link href="http://db.library.duke.edu/include/screen.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="http://db.library.duke.edu/include/search.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="http://db.library.duke.edu/include/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="stylesheet" href="http://db.library.duke.edu/include/ui.tabs.css" type="text/css" media="screen" />
+<link rel="search" type="application/opensearchdescription+xml"
+    href="http://db.library.duke.edu/include/opensearch.xml" title="Search TRLN" />
+
+
+
+<!-- javascripts -->
+<script language="JavaScript" type="text/javascript" src="http://db.library.duke.edu/include/endeca.js"></script>
+<script type="text/javascript" src="http://db.library.duke.edu/include/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://db.library.duke.edu/include/jquery.fancybox.js"></script>
+<script type="text/javascript" src="http://db.library.duke.edu/include/jquery.pngFix.js"></script>
+<script type="text/javascript" src="http://db.library.duke.edu/include/ui.tabs.js"></script>
+<script type="text/javascript" src="http://db.library.duke.edu/include/search.js"></script>
+<script type="text/javascript" src="http://db.library.duke.edu/include/shib_login.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+ <link rel="stylesheet" type="text/css" href="http://db.library.duke.edu/include/duke/global_stylesheet.css" /> 
+                 <link rel="stylesheet" type="text/css" href="http://db.library.duke.edu/include/duke-branding-masthead.css" /> 
+                 <link rel="stylesheet" type="text/css" href="http://db.library.duke.edu/include/duke-branding-footer.css" /> 
+                 <link rel="stylesheet" type="text/css" href="http://db.library.duke.edu/include/duke/duke-skin-styles.css" /> 
+                 <link rel="stylesheet" type="text/css" href="http://db.library.duke.edu/include/duke/duke-skin-dc.css" /> 
+
+                 <script language="JavaScript" type="text/javascript" src="http://library.duke.edu/static/librarycatalog/js/ga-include-search-db.library.duke.edu.js"></script> 
+                    
+                <!-- This is the javascript that inserts the masthead. Note the parameters. -->
+
+                <script src="//library.duke.edu/masthead/load-masthead.js.php?width=990&amp;fixed=true"></script>
+                <!--<script src="//localhost:8888/php_workspace/madlib/masthead/load-masthead.js.php?width=990&amp;fixed=false"></script> -->
+
+                
+
+
+<!-- Detect toggle for google analytics and write out appropriate javascript to support google analytics and track events -->
+    
+
+</head>
+
+<body applicationskinname="duke-db">
+
+<!-- This is the basic masthead filler that is replaced via javascript -->
+<div id="dul-masthead-filler" style="width: 100%; text-align: center;">
+    <div style="height:105px; width:990px; max-width: 990px; background-color:#053482; margin: 0 auto; margin-bottom: -2px;">
+        <img src="//library.duke.edu/masthead/img/logo.png" alt="Duke University Libraries" id="dul-masthead-logo" style="float: left; margin: 20px;">
+    </div>
+</div>
+
+
+
+
+
+<table border="0" align="center" id="mainContent" cellpadding="0">
+
+    
+    <tr>
+        <td colspan="2">
+        
+            
+            
+
+
+
+
+
+
+
+ 
+
+
+<!-- Flat masthead adapted from madlib Drupal theme. Not dependent on Bootstrap, megamenu.js, 960.gs, or other frameworks -->
+
+<!-- BOOKS & MORE (CATALOG) BREADCRUMB -->
+<div class="easy-breadcrumb breadcrumbBasic">
+    <a href="http://library.duke.edu" class="easy-breadcrumb_segment easy-breadcrumb_segment-front">Home</a>
+    <a href="http://library.duke.edu/find" class="easy-breadcrumb_segment easy-breadcrumb_segment-1">Search &amp; Find</a>
+    <a href="http://library.duke.edu/find/databases" class="easy-breadcrumb_segment easy-breadcrumb_segment-2">Research Databases</a>
+    <span class="easy-breadcrumb_segment easy-breadcrumb_segment-title">Search</span>
+</div>
+                        
+    
+
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" class="shibLogin">
+            
+            
+
+
+
+
+
+
+
+    
+
+            <div>
+                
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" class="tabsBack">
+
+
+            <div class="markedItemBox" id="frontMarkedItemBox" style="display: block;">
+ 
+                    <a id="markedItemCount" href="./markeditems?op=list" title="Print, Email, or Export your marked items">
+                        
+                        0 marked items
+
+                    </a>
+                </div>
+
+
+            <div id="tabs" >
+                <ul>
+                    <li><a href="#tab1"><span>Search</span></a></li>
+                    <li><a href="#tab2"><span>Advanced Search</span></a></li>
+                    
+                </ul>
+
+            <div id="tab1">
+                    <table border="0" id="searchTable">
+                        <tr>
+                            <td colspan="2" valign="top">
+                                
+                                <table border="0" cellpadding="2" cellspacing="0" class="basicSearch">
+                                        <tr>
+                                            <td><strong>Search for:</strong>
+                                            <form style="display: inline;" accept-charset="utf-8" name="keywordSearch" id="queryBox" action="search" method="get">
+                                            <input type="hidden" name="Nty" value="1" />
+                                            <input type="hidden" name="N" value="0" />
+                                            <input type="hidden" id="sugg" name="sugg" value="" />
+                                            <input type="hidden" name="source" id="source" value="duke" />
+                                            </td>
+                                            
+                                            <td><strong>In:</strong></td>
+                                            <td rowspan="2" valign="bottom"> <input type="submit" value="Search" id="querySubmit" tabindex="3"/> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <input type="text" size="50" maxlength="250" name="Ntt" tabindex="1" id="Ntt" value="" /> </td>
+                                            <td>
+                                                
+                                                
+
+
+
+
+
+
+        <select name="Ntk" id="Ntk" style="width: 180px;" onchange="getExamples('keyword')" tabindex="2">
+            
+            <option value="Keyword">Words Anywhere</option>
+<option value="Title">Title</option>
+<option value="Subject">Subject Heading</option>
+
+        </select>
+            
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">
+                                                <table border="0" width="100%" cellpadding="2" cellspacing="0" id="exampletext">
+                                                    <tr>
+                                                        <td valign="top" id="wordsExamples" width="10%"> Examples: </td>
+                                                        <td valign="top"><div id="keywordExampleDiv">active learning<br />"united states" revolution causes</div></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </form>
+                                    
+                                    </table>
+                            </td>
+                            
+                            <td>
+                            <img src="images/clear.gif" border="0" width="0" height="100" />
+                            </td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                            
+                            
+                            
+
+
+
+
+
+
+
+    
+
+
+                            
+
+
+
+
+
+
+
+    
+
+
+                            </td>
+                            
+                            <td>
+                            <img src="images/clear.gif" border="0" width="0" height="180" />
+                            </td>
+                            
+                        </tr>
+    
+    
+                    </table>
+                    
+                    
+                </div>
+                
+                    
+                <div id="tab2">
+                    <form name="advancedSearch" accept-charset="utf-8" onsubmit="return buildSearchURL('keyword')">
+                        <table border="0" id="searchTable">
+                            <tr>
+                                <td valign="top">   
+                                    <table border="0" cellpadding = "2" cellspacing = "0">
+                                        <tr>
+                                            <td>
+                                                
+                                                
+
+
+
+
+
+
+            <table border="0" cellpadding="2" cellspacing="0">
+                <tr>
+                    <td colspan="2"><strong>Search Fields</strong></td>
+                </tr>
+                <tr>
+                    <td><label for="keywordAnywhere">Words Anywhere</label></td>
+                    <td><input type="text" name="keywordAnywhere" id="keywordAnywhere" size="40" /></td>
+                </tr>
+                <tr>
+                    <td><label for="keywordTitle">Title</label></td>
+                    <td><input type="text" name="keywordTitle" id="keywordTitle" size="40" /></td>
+                </tr>
+                <tr>
+                    <td><label for="keywordSubject">Subject Heading</label></td>
+                    <td><input type="text" name="keywordSubject" id="keywordSubject" size="40" /></td>
+                </tr>
+
+            </table>    
+            
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td valign="top">
+                                    <table class="optionalSearchLimit" border="0" cellpadding="2" cellspacing="0">
+                                        <tr>
+                                            <td colspan="2"><strong>Optional Search Limits</strong></td>
+                                        </tr>
+                                        
+                                        
+                                        
+                                        
+
+
+
+
+
+    
+
+                                        
+                                        
+                                        
+
+
+
+
+
+
+            <tr>
+                <td valign="top">
+                    <label for="language">Language</label>
+                </td>
+                
+                <td>
+                    <select name="language" id="language">
+            
+                <option value="all" selected="selected">-- all languages --</option>
+                        
+                <option value="200672">English</option>
+                        
+                <option value="200573">Arabic</option>
+                        
+                <option value="200622">Catalan</option>
+                        
+                <option value="200630">Chinese</option>
+                        
+                <option value="200909">Croatian</option>
+                        
+                <option value="200651">Czech</option>
+                        
+                <option value="200653">Danish</option>
+                        
+                <option value="200665">Dutch</option>
+                        
+                <option value="200682">Finnish</option>
+                        
+                <option value="200685">French</option>
+                        
+                <option value="200699">Gaelic</option>
+                        
+                <option value="200696">German</option>
+                        
+                <option value="200709">Greek (Ancient)</option>
+                        
+                <option value="200710">Greek (Modern)</option>
+                        
+                <option value="200718">Hebrew</option>
+                        
+                <option value="200722">Hindi</option>
+                        
+                <option value="200726">Hungarian</option>
+                        
+                <option value="200745">Italian</option>
+                        
+                <option value="200747">Japanese</option>
+                        
+                <option value="200773">Korean</option>
+                        
+                <option value="200786">Latin</option>
+                        
+                <option value="200854">Norwegian</option>
+                        
+                <option value="200882">Polish</option>
+                        
+                <option value="200884">Portuguese</option>
+                        
+                <option value="200895">Romanian</option>
+                        
+                <option value="200897">Russian</option>
+                        
+                <option value="200907">Serbian</option>
+                        
+                <option value="200936">Spanish</option>
+                        
+                <option value="200945">Swahili</option>
+                        
+                <option value="200946">Swedish</option>
+                        
+                <option value="200983">Ukrainian</option>
+                        
+                <option value="200986">Urdu</option>
+                        
+                <option value="200997">Welsh</option>
+                        
+                    </select>
+                </td>
+            </tr>
+                
+
+                                        
+                                        
+                                        
+
+
+
+
+
+    
+
+                                        
+                                        
+                                        
+
+
+
+
+
+    
+
+                                        
+                                  </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center" valign="top">
+                                    <input type="submit" value="Search" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>              
+                
+                
+                <div id="tab5">
+                </div>
+            </div>   
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <!-- Footer, do not remove -->
+        
+
+
+
+
+
+
+
+ 
+
+<!-- Flat masthead adapted from madlib Drupal theme. Not dependent on Bootstrap, megamenu.js, 960.gs, or other frameworks -->
+<!-- begin flat footer -->
+    <div id="madlib-footer">
+        <div id="region-footer-devillogo">
+        <a href="http://library.duke.edu"><img alt="Duke University Libraries" src="http://library.duke.edu/sites/all/themes/madlib/images/devillogo-60pct-60.png"></a>
+    </div>
+    <div id="region-footer-contact">
+        <h3><a href="http://library.duke.edu/about/contact">Contact Us</a></h3>
+        <div class="perkinsAddress">
+        411 Chapel Drive<br>Durham, NC 27708<br><div style="margin-top:5px">(919) 660-5870<br><span class="font-size:7px;">Perkins Library Service Desk</span></div>
+        </div>
+
+
+    </div>
+
+    <div id="region-footer-services">
+        <h3><a href="http://library.duke.edu/services">Services for...</a></h3>
+        <ul class="services-col1">
+            <li><a href="http://library.duke.edu/services/faculty">Faculty &amp; Instructors</a></li>
+            <li><a href="http://library.duke.edu/services/graduate">Graduate Students</a></li>
+            <li><a href="http://library.duke.edu/services/undergraduate">Undergraduate Students</a></li>
+            <li><a href="http://library.duke.edu/services/international">International Students</a></li>
+        </ul>
+        <ul class="services-col2">
+            <li><a href="http://library.duke.edu/services/alumni">Alumni</a></li>
+            <li><a href="http://library.duke.edu/services/donors">Donors</a></li>   
+            <li><a href="http://library.duke.edu/services/visitors">Visitors</a></li>                               
+            <li><a href="http://library.duke.edu/services/disabilities">Patrons with Disabilities</a></li>  
+        </ul>               
+    </div>
+    <div id="region-footer-social">
+        <div class="socialMediaIconsBig">
+            <a href="https://twitter.com/DukeLibraries"><img alt="Twitter" src="http://library.duke.edu/sites/all/themes/madlib/images/icons/twitter24.png"/></a>
+            <a href="https://www.facebook.com/dukelibraries"><img alt="Facebook" src="http://library.duke.edu/sites/all/themes/madlib/images/icons/facebook24.png"/></a>
+            <a href="http://www.youtube.com/user/DukeUnivLibraries"><img alt="Youtube" src="http://library.duke.edu/sites/all/themes/madlib/images/icons/youtube24.png"/></a>
+            <a href="http://www.flickr.com/photos/dukeunivlibraries/"><img alt="Flickr" src="http://library.duke.edu/sites/all/themes/madlib/images/icons/flickr24.png"/></a>
+            <a href="http://www.pinterest.com/dukelibraries/"><img alt="Pinterest" src="http://library.duke.edu/sites/all/themes/madlib/images/icons/pinterest24.png"/></a>
+            <a href="http://blogs.library.duke.edu/"><img alt="RSS" src="http://library.duke.edu/sites/all/themes/madlib/images/icons/rss24.png"/></a>
+        </div>
+        <ul class="social-col">
+            <li><a href="http://library.duke.edu/about/reuse-attribution">Re-use &amp; Attribution</a> / <a href="http://library.duke.edu/about/privacy">Privacy</a></li>
+            <li><a href="http://library.duke.edu/support">Support the Libraries</a></li>
+        </ul>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" title="This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License"></a>
+    </div><div id="region-footer-dukelogo">
+        <a href="http://duke.edu"><img src="http://library.duke.edu/sites/all/themes/madlib/images/dukelogo_vert_60pct_140.png" class="dukeLogo" alt="Duke University"></a>
+    </div>
+
+    </div>
+    <!-- end flat footer -->
+                        
+
+        </td>
+    </tr>
+</table>
+
+            
+
+</body>
+</html>
