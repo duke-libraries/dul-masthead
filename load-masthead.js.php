@@ -16,11 +16,19 @@ if (isset($_GET['width'])) {
     $width = '990';
 }
 
-preg_match('/(?i)msie ([0-9]*)/',$_SERVER['HTTP_USER_AGENT'], $matches);
-//echo print_r($matches);
-if((string)$matches[1] === '9' || (string)$matches[1] === '8' || (string)$matches[1] === '7' || (string)$matches[1] === '6') {
-    $styleSheet = 'masthead-ie9.css';
-    $widthType = 'width';
+if (preg_match('/(?i)msie ([0-9]*)/',$_SERVER['HTTP_USER_AGENT'], $matches)) {
+    if((string)$matches[1] === '9' || (string)$matches[1] === '8' || (string)$matches[1] === '7' || (string)$matches[1] === '6') {
+        $styleSheet = 'masthead-ie9.css';
+        $widthType = 'width';
+    } else {
+        if ($fixed === 'true') {
+            $styleSheet = 'masthead-fixed.css';
+            $widthType = 'max-width: none; width';
+        } else {
+            $styleSheet = 'masthead-responsive.css';
+            $widthType = 'max-width';
+        }
+    }
 } else {
     if ($fixed === 'true') {
         $styleSheet = 'masthead-fixed.css';
@@ -28,8 +36,10 @@ if((string)$matches[1] === '9' || (string)$matches[1] === '8' || (string)$matche
     } else {
         $styleSheet = 'masthead-responsive.css';
         $widthType = 'max-width';
-    }
+    } 
 }
+
+
 
 $droptdownWidth = (string)((integer)$width - 32);
 $megamenuWidth = (string)$width;
