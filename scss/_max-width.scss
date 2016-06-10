@@ -29,8 +29,7 @@
 
     div.dul-masthead-dropdown_fullwidth {
         visibility: hidden;
-        -webkit-transition: 0 visibility;
-        visibility: hidden;
+        opacity: 0;
         position: absolute;
         top: auto;
         right: 0;
@@ -100,5 +99,5 @@ input[type=text] {
 
 input[type=text]:focus {
     border: 1px solid #1D9CC7;
-    width: 250px;        
-}   
+    width: 250px;
+}

@@ -31,15 +31,14 @@
     styleSheetLink.media="all";
     styleSheetLink.rel="stylesheet";
     styleSheetLink.href=("https:"==document.location.protocol?"https://":"//")+"library.duke.edu/masthead/css/" + stylesheet;
-    //styleSheetLink.href=("https:"==document.location.protocol?"https://":"//")+"localhost:8888/php_workspace/madlib/masthead/css/" + stylesheet;
+    //styleSheetLink.href=("https:"==document.location.protocol?"https://":"//")+"localhost:8888/php_workspace/masthead/css/" + stylesheet;
 
     head.appendChild(styleSheetLink);
 
     var mastheadDiv =doc.createElement("div");
     mastheadDiv.className="dul-masthead-bar";
-    
+
     if (win.addEventListener) {
-        // FOR REAL BROWSERS
         win.addEventListener("load",function(){
             insertMasthead(mastheadMarkup, doc, mastheadDiv);
         },!1);

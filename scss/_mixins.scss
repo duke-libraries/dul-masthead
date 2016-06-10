@@ -5,7 +5,8 @@
 }
 
 @mixin megamenu-visible() {
-    -webkit-transition-delay: 150;
     visibility: visible !important;
     z-index: 999999999;
+    opacity: 1;
+    transition: opacity 0s 0.4s;
 }

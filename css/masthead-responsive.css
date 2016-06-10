@@ -320,9 +320,10 @@
     #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover {
       background-color: #a1b70d; }
       #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover div.dul-masthead-dropdown_fullwidth {
-        -webkit-transition-delay: 150;
         visibility: visible !important;
-        z-index: 999999999; }
+        z-index: 999999999;
+        opacity: 1;
+        transition: opacity 0s 0.4s; }
     #dul-masthead-dul-megamenu .dul-masthead-megamenu_container .dul-masthead-moreLink {
       padding-left: 10px !important; }
     #dul-masthead-dul-megamenu .dul-masthead-megamenu_container .dul-masthead-megamenu_button a {
@@ -371,9 +372,10 @@
   #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover {
     background-color: #a1b70d; }
     #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover div.dul-masthead-dropdown_fullwidth {
-      -webkit-transition-delay: 150;
       visibility: visible !important;
-      z-index: 999999999; }
+      z-index: 999999999;
+      opacity: 1;
+      transition: opacity 0s 0.4s; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_container .dul-masthead-moreLink {
     padding-left: 10px !important; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_container ul .dul-masthead-mega_toplevel a {
@@ -382,8 +384,7 @@
     padding-bottom: 30px; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_container div.dul-masthead-dropdown_fullwidth {
     visibility: hidden;
-    -webkit-transition: 0 visibility;
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: auto;
     right: 0;
