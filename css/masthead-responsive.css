@@ -99,7 +99,10 @@
     position: relative; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-menu-items {
     max-width: 750px;
-    float: right; }
+    float: right;
+    /* MTD Edit */
+    position: relative;
+    left: -7000px; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu div.dul-masthead-col_2 {
     width: 16.66666666%;
     padding: 0;
@@ -321,13 +324,32 @@
 @media (min-width: 813px) and (max-width: 979px) {
   #dul-masthead-dul-megamenu {
     /* TODO: MIXIN THIS? */ }
+    #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth {
+      visibility: hidden !important;
+      z-index: 0;
+      opacity: 0;
+      max-height: 1px;
+      padding: 0;
+      transition: opacity 0s .5s, max-height 0s .5s, padding 0s .5s, z-index 0s .5s, visibility 0s .5s; }
+    #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth div.dul-masthead-menu-items {
+      left: -7000px;
+      transition: left 0s .5s; }
     #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover {
-      background-color: #a1b70d; }
+      background-color: #a1b70d;
+      /* MTD Edit */
+      cursor: pointer; }
       #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover div.dul-masthead-dropdown_fullwidth {
         visibility: visible !important;
         z-index: 999999999;
         opacity: 1;
-        transition: opacity 0s 0.4s; }
+        max-height: 500px;
+        padding: 0;
+        padding: 15px 15px 15px 15px;
+        transition: opacity 0s .7s, max-height 0s .7s, padding 0s .7s;
+        cursor: default; }
+      #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover div.dul-masthead-dropdown_fullwidth div.dul-masthead-menu-items {
+        left: 0;
+        transition: left 0s .7s; }
     #dul-masthead-dul-megamenu .dul-masthead-megamenu_container .dul-masthead-moreLink {
       padding-left: 10px !important; }
     #dul-masthead-dul-megamenu .dul-masthead-megamenu_container .dul-masthead-megamenu_button a {
@@ -358,7 +380,10 @@
       background-color: #FFF;
       border: 1px solid black;
       color: #000;
-      padding: 15px 15px 15px 15px; }
+      padding: 15px 15px 15px 15px;
+      /* MTD Edit */
+      padding: 0;
+      max-height: 1px; }
       #dul-masthead-dul-megamenu .dul-masthead-megamenu_container div.dul-masthead-dropdown_fullwidth a {
         color: #0062A0; }
       #dul-masthead-dul-megamenu .dul-masthead-megamenu_container div.dul-masthead-dropdown_fullwidth a:hover {
@@ -373,19 +398,40 @@
 @media (min-width: 980px) {
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_button a {
     display: none; }
+  #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth {
+    visibility: hidden !important;
+    z-index: 0;
+    opacity: 0;
+    max-height: 1px;
+    padding: 0;
+    transition: opacity 0s .5s, max-height 0s .5s, padding 0s .5s, z-index 0s .5s, visibility 0s .5s; }
+  #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth div.dul-masthead-menu-items {
+    left: -7000px;
+    transition: left 0s .5s; }
   #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover {
-    background-color: #a1b70d; }
+    background-color: #a1b70d;
+    /* MTD Edit */
+    cursor: pointer; }
     #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover div.dul-masthead-dropdown_fullwidth {
       visibility: visible !important;
       z-index: 999999999;
       opacity: 1;
-      transition: opacity 0s 0.4s; }
+      max-height: 500px;
+      padding: 0;
+      padding: 15px 15px 15px 15px;
+      transition: opacity 0s .7s, max-height 0s .7s, padding 0s .7s;
+      cursor: default; }
+    #dul-masthead-dul-megamenu .dul-masthead-no-touch ul li.dul-masthead-mega_toplevel:hover div.dul-masthead-dropdown_fullwidth div.dul-masthead-menu-items {
+      left: 0;
+      transition: left 0s .7s; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_container .dul-masthead-moreLink {
     padding-left: 10px !important; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_container ul .dul-masthead-mega_toplevel a {
     text-decoration: none;
     color: #FFF;
-    padding-bottom: 30px; }
+    /* MTD Edit */
+    /*padding-bottom: 30px;*/
+    margin-bottom: 30px; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu_container div.dul-masthead-dropdown_fullwidth {
     visibility: hidden;
     opacity: 0;
@@ -397,7 +443,10 @@
     margin-top: 4px;
     border: 1px solid black;
     color: #000;
-    padding: 15px 15px 15px 15px; }
+    padding: 15px 15px 15px 15px;
+    /* MTD Edit */
+    max-height: 1px;
+    padding: 0; }
     #dul-masthead-dul-megamenu .dul-masthead-megamenu_container div.dul-masthead-dropdown_fullwidth a {
       color: #0062A0; }
     #dul-masthead-dul-megamenu .dul-masthead-megamenu_container div.dul-masthead-dropdown_fullwidth a:hover {

@@ -8,5 +8,31 @@
     visibility: visible !important;
     z-index: 999999999;
     opacity: 1;
-    transition: opacity 0s 0.4s;
+    max-height: 500px;
+    padding: 0;
+    padding: 15px 15px 15px 15px;
+    transition: opacity 0s .7s, max-height 0s .7s, padding 0s .7s;
+}
+
+
+@mixin megamenu-hidden() {
+    visibility: hidden !important;
+    z-index: 0;
+    opacity: 0;
+    max-height: 1px;
+    padding: 0;
+    transition: opacity 0s .5s, max-height 0s .5s, padding 0s .5s, z-index 0s .5s, visibility 0s .5s;
+}
+
+
+
+@mixin megamenu-items-visible() {
+    left: 0;
+    transition: left 0s .7s;
+}
+
+
+@mixin megamenu-items-hidden() {
+    left: -7000px;
+    transition: left 0s .5s;
 }

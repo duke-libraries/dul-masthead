@@ -103,7 +103,10 @@
     position: relative; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-menu-items {
     max-width: 750px;
-    float: right; }
+    float: right;
+    /* MTD Edit */
+    position: relative;
+    left: -7000px; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu div.dul-masthead-col_2 {
     width: 16.66666666%;
     padding: 0;
@@ -242,3 +245,6 @@
   text-decoration: none;
   color: #FFF;
   padding-bottom: 30px; }
+#dul-masthead-dul-megamenu ul .dul-masthead-mega_toplevel:hover {
+  /* MTD Edit */
+  cursor: pointer; }

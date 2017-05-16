@@ -186,11 +186,29 @@
     @media (min-width: 813px) and (max-width: 979px) {
         /* TODO: MIXIN THIS? */
         .dul-masthead-no-touch {
+
+            ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth {
+                @include megamenu-hidden();
+            }
+
+            ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth div.dul-masthead-menu-items {
+                @include megamenu-items-hidden();
+            }
+
+
             ul li.dul-masthead-mega_toplevel:hover {
                 background-color: rgb(161, 183, 13);
 
+                /* MTD Edit */
+                cursor: pointer;
+
                 div.dul-masthead-dropdown_fullwidth {
                     @include megamenu-visible();
+                    cursor: default;
+                }
+
+                div.dul-masthead-dropdown_fullwidth div.dul-masthead-menu-items {
+                    @include megamenu-items-visible();
                 }
             }
         }
@@ -245,6 +263,10 @@
                 color: #000;
                 padding: 15px 15px 15px 15px;
 
+                /* MTD Edit */
+                padding: 0;
+                max-height: 1px;
+
                 a {
                     color: #0062A0;
                 }
@@ -275,4 +297,3 @@
     }
 
 }
-
