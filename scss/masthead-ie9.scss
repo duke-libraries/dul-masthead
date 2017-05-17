@@ -61,11 +61,15 @@
 
         ul .dul-masthead-mega_toplevel {
 
-        a {
-            text-decoration: none;
-            color: #FFF;
-            padding-bottom: 30px;
+          a {
+              text-decoration: none;
+              color: #FFF;
+              padding-bottom: 30px;
+          }
         }
-    }
+
+        ul .dul-masthead-mega_toplevel:hover {
+          cursor: pointer;
+        }
 
 }

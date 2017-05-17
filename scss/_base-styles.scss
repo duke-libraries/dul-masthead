@@ -86,7 +86,7 @@
     }
 
     .dul-masthead-muted {
-        /*color: #999999;*/
+        // color: #999999;
         color: #767676;
     }
 
@@ -122,6 +122,8 @@
         .dul-masthead-menu-items {
             max-width: 750px;
             float: right;
+            position: relative;
+            left: -7000px;
         }
 
         div.dul-masthead-col_2 {
@@ -174,7 +176,7 @@
         height: 24px;
         line-height: 19.6000003814697px;
         margin-bottom: 0px;
-        /*margin-left: 10px;*/
+        // margin-left: 10px;
         margin-right: 10px;
         margin-top: 15px;
         outline-color: rgb(51, 51, 51);
