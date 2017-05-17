@@ -85,7 +85,6 @@
     margin-left: 0;
     padding-left: 0; }
   #dul-masthead-dul-megamenu .dul-masthead-muted {
-    /*color: #999999;*/
     color: #767676; }
   #dul-masthead-dul-megamenu .dul-masthead-btn-group {
     display: inline; }
@@ -104,7 +103,6 @@
   #dul-masthead-dul-megamenu .dul-masthead-megamenu .dul-masthead-menu-items {
     max-width: 750px;
     float: right;
-    /* MTD Edit */
     position: relative;
     left: -7000px; }
   #dul-masthead-dul-megamenu .dul-masthead-megamenu div.dul-masthead-col_2 {
@@ -149,7 +147,6 @@
     height: 24px;
     line-height: 19.6000003814697px;
     margin-bottom: 0px;
-    /*margin-left: 10px;*/
     margin-right: 10px;
     margin-top: 15px;
     outline-color: #333333;
@@ -246,5 +243,4 @@
   color: #FFF;
   padding-bottom: 30px; }
 #dul-masthead-dul-megamenu ul .dul-masthead-mega_toplevel:hover {
-  /* MTD Edit */
   cursor: pointer; }

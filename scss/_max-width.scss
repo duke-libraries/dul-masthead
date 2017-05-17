@@ -16,7 +16,6 @@
     ul li.dul-masthead-mega_toplevel:hover {
 
         background-color: rgb(161, 183, 13);
-        /* MTD Edit */
         cursor: pointer;
 
         div.dul-masthead-dropdown_fullwidth {
@@ -42,8 +41,7 @@
         a {
             text-decoration: none;
             color: #FFF;
-            /* MTD Edit */
-            /*padding-bottom: 30px;*/
+            // padding-bottom: 30px;
             margin-bottom: 30px;
         }
     }
@@ -61,9 +59,7 @@
         margin-top:4px;
         border: 1px solid black;
         color: #000;
-        padding: 15px 15px 15px 15px;
-
-        /* MTD Edit */
+        // padding: 15px 15px 15px 15px;
         max-height: 1px;
         padding: 0;
 

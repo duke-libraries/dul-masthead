@@ -14,7 +14,6 @@
     transition: opacity 0s .7s, max-height 0s .7s, padding 0s .7s;
 }
 
-
 @mixin megamenu-hidden() {
     visibility: hidden !important;
     z-index: 0;
@@ -24,13 +23,10 @@
     transition: opacity 0s .5s, max-height 0s .5s, padding 0s .5s, z-index 0s .5s, visibility 0s .5s;
 }
 
-
-
 @mixin megamenu-items-visible() {
     left: 0;
     transition: left 0s .7s;
 }
-
 
 @mixin megamenu-items-hidden() {
     left: -7000px;
