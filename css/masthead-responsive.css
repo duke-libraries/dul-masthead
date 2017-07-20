@@ -209,7 +209,7 @@
 
 @media (max-width: 450px) {
   #dul-masthead-dul-megamenu .dul-masthead-region-myaccount {
-    margin-right: -20px !important;
+    margin-right: -10px !important;
     padding-right: 0 !important; }
   #dul-masthead-dul-megamenu img#dul-masthead-logo {
     width: 130px; }
@@ -221,6 +221,8 @@
     padding-top: 5px;
     margin-bottom: 0px; } }
 @media (max-width: 812px) {
+  #dul-masthead-dul-megamenu .dul-masthead-region-myaccount {
+    margin-right: -30px; }
   #dul-masthead-dul-megamenu #dul-masthead-dul-megamenu {
     height: 115px  !important; }
   #dul-masthead-dul-megamenu .dul-masthead-mastSearch {
