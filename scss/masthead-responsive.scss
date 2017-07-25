@@ -11,7 +11,7 @@
     @media (max-width: 450px) {
 
         .dul-masthead-region-myaccount {
-            margin-right: -20px !important;
+            margin-right: -10px !important;
             padding-right: 0 !important;
         }
 
@@ -34,6 +34,11 @@
 
 
     @media (max-width: 812px) {
+
+        .dul-masthead-region-myaccount {
+            margin-right: -30px;
+        }
+
         #dul-masthead-dul-megamenu {
             height: 115px  !important;
         }
