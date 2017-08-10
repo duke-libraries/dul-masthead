@@ -15,17 +15,14 @@
             padding-right: 0 !important;
         }
 
-        img#dul-masthead-logo {
-            width: 130px;
-        }
-
         label[for="dul-masthead-nav-trigger"] {
-            padding-top: 10px;
-            padding-bottom: 5px;
+            /*padding-top: 10px;
+            padding-bottom: 5px;*/
         }
     }
 
-    @media (min-width: 451px) and (max-width: 811px) {
+    @media (max-width: 811px) {
+
         label[for="dul-masthead-nav-trigger"] {
             padding-top: 5px;
             margin-bottom: 0px;
@@ -34,6 +31,10 @@
 
 
     @media (max-width: 812px) {
+
+        img#dul-masthead-logo {
+            max-width: 159px;
+        }
 
         .dul-masthead-region-myaccount {
             margin-right: -30px;
