@@ -87,7 +87,8 @@
   #dul-masthead-dul-megamenu #dul-masthead-logo {
     float: left;
     margin-left: 20px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    max-width: 130px; }
   #dul-masthead-dul-megamenu .dul-masthead-region-scoped-search {
     float: right;
     display: block;
@@ -214,13 +215,10 @@
   #dul-masthead-dul-megamenu label[for="dul-masthead-nav-trigger"] {
     /*padding-top: 10px;
     padding-bottom: 5px;*/ } }
-@media (max-width: 811px) {
+@media (max-width: 812px) {
   #dul-masthead-dul-megamenu label[for="dul-masthead-nav-trigger"] {
     padding-top: 5px;
-    margin-bottom: 0px; } }
-@media (max-width: 812px) {
-  #dul-masthead-dul-megamenu img#dul-masthead-logo {
-    max-width: 159px; }
+    margin-bottom: 0px; }
   #dul-masthead-dul-megamenu .dul-masthead-region-myaccount {
     margin-right: -30px; }
   #dul-masthead-dul-megamenu #dul-masthead-dul-megamenu {
@@ -286,7 +284,9 @@
     display: block; } }
 @media (min-width: 813px) {
   #dul-masthead-dul-megamenu label {
-    display: none; } }
+    display: none; }
+  #dul-masthead-dul-megamenu img#dul-masthead-logo {
+    max-width: 159px; } }
 @media (max-width: 860px) {
   #dul-masthead-dul-megamenu input[type=text] {
     width: 125px;

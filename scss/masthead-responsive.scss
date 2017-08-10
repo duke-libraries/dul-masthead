@@ -21,19 +21,12 @@
         }
     }
 
-    @media (max-width: 811px) {
+
+    @media (max-width: 812px) {
 
         label[for="dul-masthead-nav-trigger"] {
             padding-top: 5px;
             margin-bottom: 0px;
-        }
-    }
-
-
-    @media (max-width: 812px) {
-
-        img#dul-masthead-logo {
-            max-width: 159px;
         }
 
         .dul-masthead-region-myaccount {
@@ -145,6 +138,11 @@
         label {
             display: none;
         }
+
+        img#dul-masthead-logo {
+            max-width: 159px;
+        }
+
     }
 
     @media (max-width: 860px) {
