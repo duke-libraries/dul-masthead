@@ -87,7 +87,8 @@
   #dul-masthead-dul-megamenu #dul-masthead-logo {
     float: left;
     margin-left: 20px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    max-width: 130px; }
   #dul-masthead-dul-megamenu .dul-masthead-region-scoped-search {
     float: right;
     display: block;
