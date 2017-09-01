@@ -2,6 +2,10 @@
     display: none;
 }
 
+img.dul-masthead-megaFeature {
+  width: 205px;
+}
+
 .dul-masthead-no-touch {
 
     ul li.dul-masthead-mega_toplevel div.dul-masthead-dropdown_fullwidth {
@@ -43,7 +47,14 @@
             color: #FFF;
             // padding-bottom: 30px;
             margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: .03em;
+            font-size: 16px;
         }
+    }
+
+    span.dul-masthead-smaller {
+      font-size: 14px;
     }
 
     div.dul-masthead-dropdown_fullwidth {
@@ -65,6 +76,9 @@
 
         a {
             color: #0062A0;
+            font-size: 16px;
+            letter-spacing: .02em;
+            font-weight: 400;
         }
 
         a:hover {

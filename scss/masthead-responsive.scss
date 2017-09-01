@@ -51,6 +51,7 @@
             cursor: pointer;
             font-size: 20px;
             color: #FFF;
+            font-weight: 300;
         }
 
         .dul-masthead-nav-trigger:checked ~ .dul-masthead-mobile-menu {
@@ -249,6 +250,9 @@
                     text-decoration: none;
                     color: #FFF;
                     padding-bottom: 30px;
+                    font-weight: 300;
+                    letter-spacing: .02em;
+                    font-size: 14px;
                 }
             }
 
@@ -269,6 +273,9 @@
 
                 a {
                     color: #0062A0;
+                    font-size: 15px;
+                    letter-spacing: .02em;
+                    font-weight: 400;
                 }
 
                 a:hover {
