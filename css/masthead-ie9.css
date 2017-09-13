@@ -45,7 +45,8 @@
     padding-left: 5px;
     padding-right: 6px;
     padding-top: 4px;
-    box-sizing: content-box; }
+    box-sizing: content-box;
+    font-size: 14px; }
   #dul-masthead-dul-megamenu input[type=text]::placeholder {
     color: #999; }
   #dul-masthead-dul-megamenu .img-polaroid {
