@@ -17,9 +17,9 @@ Including the masthead
     ```
 
 2. Optionally, you may add a placeholder div with an id of "dul-masthead-filler" that helps mask the time it takes to load the real masthead via Javascript. This div may be placed anywhere in the page markup. You may need to alter the inline styles for your particular page, for instance, if it is wider than 990px.
-    
+
     A basic example:
-    
+
     ```
       <!-- This is the basic masthead filler that is replaced via javascript -->
       <div id="dul-masthead-filler" style="width: 100%; text-align: center;">
@@ -56,8 +56,9 @@ Installing and using Guard
   ```
   $ gem install guard
   ```
-* Guard requires additional gems in order to execute specific actions. In this case we want it to watch for changes to scss files and then to compile css from those files. And we want it to watch for changes to a javascript file and output a minified version of that file. For these purposes we'll need to install [Guard-Sass](https://github.com/hawx/guard-sass) and [Guard-Uglify](https://github.com/pferdefleisch/guard-uglify).
+* Guard requires additional gems in order to execute specific actions. In this case we want it to watch for changes to scss files and then to compile css from those files. And we want it to watch for changes to a javascript file and output a minified version of that file. For these purposes we'll need to install [Guard-LiveReload](https://github.com/guard/guard-livereload), [Guard-Sass](https://github.com/hawx/guard-sass) and, [Guard-Uglify](https://github.com/pferdefleisch/guard-uglify).
   ```
+  $ gem install guard-livereload
   $ gem install guard-sass
   $ gem install guard-uglify
   ```
