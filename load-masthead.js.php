@@ -10,7 +10,7 @@ if (isset($_GET['fixed'])) {
     $fixed = 'false';
 }
 
-if (isset($_GET['width'])) {
+if (isset($_GET['width']) && preg_match('/^[0-9]{1,4}$/', $_GET['width'])) {
     $width = $_GET['width'];
 } else {
     $width = '990';
