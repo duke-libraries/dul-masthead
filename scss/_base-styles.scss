@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 #dul-masthead-dul-megamenu {
     /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
     html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
@@ -34,6 +36,24 @@
       color: #999;
     }
 
+    /* See https://ghinda.net/article/mimic-native-focus-css/ */
+    a:focus, input[type=text]:focus, button:focus {
+      outline-style: solid;
+      outline-width: 3px;
+      outline-offset: 2px;
+      outline-color: Highlight;
+      /* Chrome & Safari */
+      @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+        outline-color: -webkit-focus-ring-color;
+        outline-width: 5px;
+        outline-style: auto;
+      }
+      /* Firefox */
+      @-moz-document url-prefix() {
+        outline-width: 3px;
+      }
+    }
+
     .img-polaroid {
         padding: 4px;
         text-align: left;
@@ -49,11 +69,11 @@
       width: 172px;
     }
 
-    .dul-masthead-nav-trigger {
+    #dul-masthead-nav-trigger-btn {
         display: none;
     }
 
-    .dul-masthead-mobile-menu {
+    .dul-masthead-mobile-menu[hidden] {
         display: none;
     }
 
@@ -62,12 +82,13 @@
     }
 
     button.dul-masthead-btn {
-        width: 45px;
+        width: 38px;
         height: 32px;
         border: 0;
         cursor: pointer;
-        background: #a1b70d url('//library.duke.edu/masthead/img/search.png') center no-repeat;
-        background-size: 45%;
+        border-left: 2px solid #6c7b09;
+        background: #a1b70d url('../img/search-222.png') center no-repeat;
+        background-size: 55%;
         position: relative;
         right: 5px;
         bottom: 0;
@@ -75,6 +96,9 @@
         -webkit-border-radius:0px;
         -moz-border-radius:0px;
         border-radius:0px;
+        &:hover {
+          background-color: #A7BF0D;
+        }
     }
 
     input.dul-masthead-mastSearchBox {
@@ -88,7 +112,6 @@
 
     span.dul-masthead-smaller {
       font-size: 13px;
-      letter-spacing: .02em;
     }
 
     .dul-masthead-normal {
@@ -106,15 +129,17 @@
         display:inline;
     }
 
-    #dul-masthead-logo {
-        // position: absolute;
-        // top: 20px;
-        // left: auto;
-        // padding-left: 20px;
-
+    .dul-masthead-region-logo {
         float: left;
-        margin-left: 20px;
-        margin-top: 20px;
+        a#dul-logo-link {
+          float: left;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+    }
+
+    #dul-masthead-logo {
+        float: left;
         max-width: 130px;
     }
 
@@ -208,9 +233,6 @@
         // margin-left: 10px;
         margin-right: 10px;
         margin-top: 15px;
-        outline-color: rgb(51, 51, 51);
-        outline-style: none;
-        outline-width: 0px;
         padding-bottom: 6px;
         padding-left: 0px;
         padding-right: 20px;
@@ -222,27 +244,38 @@
         a {
             color: #94AFED;
             text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            display: inline-block;
             margin-left: 15px;
+            &:before {
+              content: " ";
+              background-repeat: no-repeat;
+              height: 20px;
+              width: 18px;
+              display: inline-block;
+              vertical-align: top;
+              margin-right: 5px;
+            }
+            &:hover, &:focus {
+              color: #aac1f7;
+            }
         }
 
-        #dul-masthead-myAccounts {
-            @include icon('//library.duke.edu/masthead/img/user-94AFED-17x16.png');
+        #dul-masthead-myAccounts:before {
+            background-image: url("../img/user-94AFED-17x16.png");
         }
 
-        #dul-masthead-ask-librarian-link {
-            @include icon('//library.duke.edu/masthead/img/comment-94AFED-18x15.png');
+        #dul-masthead-ask-librarian-link:before {
+            background-image: url("../img/comment-94AFED-18x15.png");
         }
 
-        #dul-masthead-account-hours {
-            @include icon('//library.duke.edu/masthead/img/clock-94AFED-16x16.png');
+        #dul-masthead-account-hours:before {
+            background-image: url("../img/clock-94AFED-16x16.png");
         }
 
-        #dul-masthead-website-search-link {
-            @include icon('//library.duke.edu/masthead/img/search-94AFED-16x16.png');
-        }
-
-        a:hover {
-            color: #aac1f7;
+        #dul-masthead-website-search-link:before {
+            background-image: url("../img/search-94AFED-16x16.png");
         }
 
     }
@@ -279,22 +312,12 @@
         font-size: 13px;
     }
 
-    #dul-masthead-nav-trigger, #dul-masthead-nav-collapse {
-        position: fixed;
-        clip: rect(0, 0, 0, 0);
-    }
-
     .dul-masthead-mastSearchBox {
         font-size: 12px;
     }
 
     body {
         margin:0;
-    }
-
-    .hide-link-text {
-      line-height: 0 !important;
-      font-size: 0 !important;
     }
 
 }

@@ -22,6 +22,21 @@
             var pageBody = document.getElementsByTagName("body")[0];
             pageBody.insertBefore(mastheadDiv, pageBody.firstChild);
         }
+
+        // Toggle mobile menu on click trigger
+        // See https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/
+        // & https://elliotekj.com/2016/11/05/jquery-to-pure-js-event-listeners-on-dynamically-created-elements/
+
+        document.querySelector('#dul-masthead-nav-trigger-btn').addEventListener('click', function (event) {
+          if (event.target && event.target.id=='dul-masthead-nav-trigger-btn') {
+            var mobileNavTrigger = event.target;
+            var expanded = mobileNavTrigger.getAttribute('aria-expanded') === 'true' || false;
+            mobileNavTrigger.setAttribute('aria-expanded', !expanded);
+            var menu = document.getElementById('dul-masthead-mobile-menu');
+            menu.hidden = !menu.hidden;
+          }
+        });
+
     }
 
     var head = doc.head || doc.getElementsByTagName("head")[0];
@@ -48,5 +63,6 @@
             insertMasthead(mastheadMarkup, doc, mastheadDiv);
         },!1);
     }
+
 
 })(_dmh);

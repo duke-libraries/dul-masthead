@@ -20,7 +20,12 @@ img.dul-masthead-megaFeature {
     ul li.dul-masthead-mega_toplevel:hover {
 
         background-color: rgb(161, 183, 13);
+        border-top: 4px solid #6c7b09;
+        margin-top: -4px !important;
         cursor: pointer;
+        & > a {
+          color: #222;
+        }
 
         div.dul-masthead-dropdown_fullwidth {
             @include megamenu-visible();
@@ -42,15 +47,14 @@ img.dul-masthead-megaFeature {
 
     ul .dul-masthead-mega_toplevel {
 
-        a {
+
+        > a {
             text-decoration: none;
             color: #FFF;
-            // padding-bottom: 30px;
-            margin-bottom: 30px;
-            font-weight: 300;
-            letter-spacing: .03em;
             font-size: 16px;
+            font-weight: 400;
         }
+
     }
 
     span.dul-masthead-smaller {
@@ -63,26 +67,21 @@ img.dul-masthead-megaFeature {
         position: absolute;
         top: auto;
         right: 0;
-        // background-color: rgb(238, 238, 238);
         background-color: #FFF;
-        // width: 960px;
         margin: -18px auto;
         margin-top:4px;
-        border: 1px solid black;
+        border: 1px solid #999;
         color: #000;
-        // padding: 15px 15px 15px 15px;
         max-height: 1px;
         padding: 0;
 
         a {
             color: #0062A0;
             font-size: 16px;
-            letter-spacing: .02em;
             font-weight: 400;
-        }
-
-        a:hover {
-            color: #728302;
+            &:hover {
+              color: #6c7b09;
+            }
         }
 
         ul {

@@ -15,19 +15,10 @@
             padding-right: 0 !important;
         }
 
-        label[for="dul-masthead-nav-trigger"] {
-            /*padding-top: 10px;
-            padding-bottom: 5px;*/
-        }
     }
 
 
     @media (max-width: 812px) {
-
-        label[for="dul-masthead-nav-trigger"] {
-            padding-top: 5px;
-            margin-bottom: 0px;
-        }
 
         .dul-masthead-region-myaccount {
             margin-right: -30px;
@@ -42,55 +33,55 @@
             visibility: hidden;
         }
 
-        label[for="dul-masthead-nav-trigger"] {
-            float: left;
-            clear: left;
-            padding-left: 20px;
-            z-index: 2;
-            height: 30px;
-            cursor: pointer;
-            font-size: 20px;
-            color: #FFF;
-            font-weight: 300;
+        button#dul-masthead-nav-trigger-btn {
+          display: block;
+          border: 0px;
+          clear: both;
+          float: left;
+          background: transparent;
+          color: white;
+          font-size: 19px;
+          margin-top: 5px;
+          margin-left: 14px;
+          cursor: pointer;
+          &:hover {
+            color: #ddd;
+          }
+          &[aria-expanded=true] {
+            color: #a1b70d;
+          }
         }
 
-        .dul-masthead-nav-trigger:checked ~ .dul-masthead-mobile-menu {
-            display: block !important;
+        .dul-masthead-mobile-menu {
             position: absolute;
             margin: 0;
             margin-top: 105px;
             padding: 0;
-            left: 0px;
             top: auto;
-            width: 100%;
             z-index: 9999999;
-            border: 1px solid black;
+            border: 1px solid #999;
             background-color: #FFF;
             a {
                 color: #0062A0;
                 text-decoration: none;
-                padding-left: 10px;
-            }
-
-            a:hover {
-                color: #A1B70D;
+                padding: 10px;
+                display: block;
+                font-size: 16px;
+                font-weight: bold;
+                min-width: 200px;
+                &:hover {
+                  color: #6c7b09; 
+                  background: #fafafa;
+                }
             }
 
             li {
-                padding: 10px 10px 5px 10px;
+                padding: 0;
             }
-        }
 
-        .dul-masthead-nav-trigger:checked ~ label[for="dul-masthead-nav-trigger"] {
-            z-index: 0;
-        }
-
-        .dul-masthead-nav-trigger:checked ~ .dul-masthead-overlay {
-            position: absolute;
-            top: auto;
-            left: 0;
-            height: 105px;
-            width: 100%;
+            &:not([hidden]) {
+              display: block;
+            }
         }
 
         .dul-masthead-megamenu_container {
@@ -118,13 +109,7 @@
 
         }
 
-        .dul-masthead-nav-trigger, .dul-masthead-nav-collapse {
-            position: absolute;
-            clip: rect(0, 0, 0, 0);
-        }
-
-
-        #dul-masthead-mobile-menu {
+        #dul-masthead-mobile-menu[hidden] {
             display: none;
         }
 
@@ -136,8 +121,8 @@
     }
 
     @media (min-width: 813px) {
-        label {
-            display: none;
+        .dul-masthead-mobile-menu {
+          display: none;
         }
 
         img#dul-masthead-logo {
@@ -181,7 +166,7 @@
             -webkit-transition-timing-function: ease;
             }
         input[type=text]:focus {
-            border: 1px solid #1D9CC7;
+            /* border: 1px solid #1D9CC7; */
             width: 175px;
             }
 
@@ -204,6 +189,12 @@
             ul li.dul-masthead-mega_toplevel:hover {
                 background-color: rgb(161, 183, 13);
                 cursor: pointer;
+                border-top: 4px solid #6c7b09;
+                margin-top: -4px !important;
+                
+                & > a {
+                  color: #222;
+                }
 
                 div.dul-masthead-dropdown_fullwidth {
                     @include megamenu-visible();
@@ -249,10 +240,8 @@
                 a {
                     text-decoration: none;
                     color: #FFF;
-                    padding-bottom: 30px;
-                    font-weight: 300;
-                    letter-spacing: .02em;
                     font-size: 14px;
+                    font-weight: bold;
                 }
             }
 
@@ -265,21 +254,18 @@
                 right: 0;
                 margin-top: 1px;
                 background-color: #FFF;
-                border: 1px solid black;
+                border: 1px solid #999;
                 color: #000;
-                /*padding: 15px 15px 15px 15px;*/
                 padding: 0;
                 max-height: 1px;
 
                 a {
                     color: #0062A0;
                     font-size: 15px;
-                    letter-spacing: .02em;
                     font-weight: 400;
-                }
-
-                a:hover {
-                    color: #728302;
+                    &:hover {
+                      color: #6c7b09;
+                    }
                 }
 
                 ul {

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @mixin icon($iconurl) {
     background-image: url($iconurl);
     background-repeat: no-repeat;
