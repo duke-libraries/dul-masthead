@@ -2,6 +2,12 @@
   width: 100%;
   text-align: center; }
 
+/* Temporary patch for blacklight catalog UI. Remove this rule after */
+/* dul-argon-skin version > 1.2.0 is deployed. */
+body[class^="blacklight"] .dul-masthead-region-logo {
+  display: none !important; }
+
+/* end temporary patch */
 #dul-masthead-dul-megamenu {
   /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
   /* End Reset */
